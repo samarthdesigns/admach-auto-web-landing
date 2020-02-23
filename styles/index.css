@@ -1,7 +1,65 @@
+@font-face {
+  font-family: 'Manrope-ExtraBold';
+  src: url("/content/fonts/Manrope-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Light';
+  src: url("/content/fonts/Manrope-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url("/content/fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-ExtraBold';
+  src: url("/content/fonts/Manrope-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Light';
+  src: url("/content/fonts/Manrope-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url("/content/fonts/Manrope-Regular.ttf");
+}
+
+.button-holder-one {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  background: #49C5B6;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 124px;
+  min-width: 130px;
+  font-family: 'Manrope-Regular';
+  letter-spacing: 1.13px;
+  cursor: pointer;
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   padding: 0px;
   margin: 0px;
   background: #FFFFFF;
+  font-weight: 300;
 }
 
 .main {
@@ -16,6 +74,60 @@ body {
   margin-right: -4px;
   margin-bottom: -4px;
   display: inline-block;
-  background: #141414;
+  background: #FFFFFF;
+  overflow: hidden;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.landing-video {
+  height: 100%;
+  width: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.landing-video-ani {
+  width: 100%;
+  height: auto;
+}
+
+.tint {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  float: right;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.tint-ani {
+  width: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.left-ani {
+  width: 0px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.right-ani {
+  width: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#close-video {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 /*# sourceMappingURL=index.css.map */
