@@ -130,6 +130,7 @@ body {
   width: 80%;
   min-width: 500px;
   max-width: 800px;
+  overflow: hidden;
 }
 
 .two-section .button-holder-two {
@@ -156,6 +157,9 @@ body {
   }
   .two-section .button-holder-two {
     margin-left: 10px;
+  }
+  .two-section .holder {
+    min-width: 0px;
   }
 }
 
@@ -221,7 +225,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .left-ani {
-    opacity: 0;
+    height: 0px !important;
     width: 100%;
   }
 }
