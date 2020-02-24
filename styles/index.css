@@ -41,6 +41,37 @@
   font-family: 'Manrope-Regular';
   letter-spacing: 1.13px;
   cursor: pointer;
+  border: 1px solid #49C5B6;
+}
+
+@media screen and (max-width: 1100px) {
+  .button-holder-one {
+    min-width: 70px;
+    font-size: 12px;
+  }
+}
+
+.button-holder-two {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  background: transparent;
+  text-align: center;
+  color: #49C5B6;
+  border-radius: 124px;
+  min-width: 130px;
+  font-family: 'Manrope-Regular';
+  letter-spacing: 1.13px;
+  cursor: pointer;
+  border: 1px solid #49C5B6;
+}
+
+@media screen and (max-width: 1100px) {
+  .button-holder-two {
+    min-width: 70px;
+    font-size: 12px;
+  }
 }
 
 .center {
@@ -80,6 +111,31 @@ body {
   transition: all .5s ease;
 }
 
+.two-section h1 {
+  font-size: 38px;
+  color: #49C5B6;
+  font-family: 'Manrope-ExtraBold';
+  letter-spacing: 3px;
+}
+
+.two-section p {
+  font-size: 20px;
+  line-height: 41px;
+  font-family: 'Manrope-Light';
+  letter-spacing: 1.25px;
+  margin-bottom: 60px;
+}
+
+.two-section .holder {
+  width: 80%;
+  min-width: 500px;
+  max-width: 800px;
+}
+
+.two-section .button-holder-two {
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 1100px) {
   .two-section {
     display: block;
@@ -87,6 +143,25 @@ body {
     margin-bottom: 0px;
     width: 100%;
     height: 50vh;
+  }
+  .two-section h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .two-section p {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .two-section .button-holder-two {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #left-info {
+    height: 70vh;
   }
 }
 
@@ -118,7 +193,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .tint {
-    margin-top: 50vh;
+    margin-top: 70vh;
     height: 50vh;
     width: 100%;
   }
@@ -146,7 +221,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .left-ani {
-    height: 0px;
+    opacity: 0;
     width: 100%;
   }
 }
