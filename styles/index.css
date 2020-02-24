@@ -99,6 +99,12 @@ body {
   word-spacing: -1;
 }
 
+@media screen and (max-width: 1100px) {
+  .main {
+    height: 120vh;
+  }
+}
+
 .two-section {
   width: 50%;
   height: 100%;
@@ -124,6 +130,10 @@ body {
   font-family: 'Manrope-Light';
   letter-spacing: 1.25px;
   margin-bottom: 60px;
+}
+
+.two-section b {
+  font-family: 'Manrope-ExtraBold';
 }
 
 .two-section .holder {
@@ -248,5 +258,127 @@ body {
   position: fixed;
   top: 20px;
   left: 20px;
+}
+
+.section {
+  height: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: transparent;
+}
+
+.section h1 {
+  font-size: 38px;
+  color: #49C5B6;
+  font-family: 'Manrope-ExtraBold';
+  letter-spacing: 3px;
+}
+
+.section p {
+  font-size: 20px;
+  line-height: 41px;
+  font-family: 'Manrope-Light';
+  letter-spacing: 1.25px;
+  margin-bottom: 60px;
+}
+
+.section .holder {
+  width: 80%;
+  min-width: 500px;
+  max-width: 800px;
+  overflow: hidden;
+  margin: auto auto;
+  text-align: center;
+}
+
+.section .button-holder-one {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  left: 0px;
+  top: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .section p {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .section .holder {
+    min-width: 0px;
+    width: 90%;
+  }
+}
+
+.marquee-holder {
+  width: auto;
+  text-align: center;
+  margin: auto auto;
+  white-space: nowrap;
+  width: 2200px;
+  position: relative;
+  left: 0px;
+  animation: marqueemover 12s ease-in-out .4s alternate-reverse infinite;
+}
+
+@-webkit-keyframes marqueemover {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -600px;
+  }
+}
+
+@keyframes marqueemover {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -600px;
+  }
+}
+
+.marquee-card {
+  height: 50px;
+  width: auto;
+  display: inline-block;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 55px;
+}
+
+#partners h1 {
+  margin-bottom: 120px;
+}
+
+#partners .holder {
+  max-width: none;
+  width: 100%;
+}
+
+#contact-us .holder {
+  text-align: left;
+}
+
+#contact-us img {
+  width: 100%;
+  height: auto;
+  float: right;
+}
+
+@media screen and (max-width: 1100px) {
+  #contact-us .holder {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */
