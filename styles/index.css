@@ -325,26 +325,31 @@ body {
   margin: auto auto;
   white-space: nowrap;
   width: 2200px;
-  position: relative;
-  left: 0px;
-  animation: marqueemover 12s ease-in-out .4s alternate-reverse infinite;
+  -webkit-transform: translateX(calc(0px));
+          transform: translateX(calc(0px));
+  -webkit-animation: marqueemover 12s ease-in-out alternate infinite;
+          animation: marqueemover 12s ease-in-out alternate infinite;
 }
 
 @-webkit-keyframes marqueemover {
   0% {
-    left: 0px;
+    -webkit-transform: translateX(calc(0px));
+            transform: translateX(calc(0px));
   }
   100% {
-    left: -600px;
+    -webkit-transform: translateX(calc(100vw - 2200px));
+            transform: translateX(calc(100vw - 2200px));
   }
 }
 
 @keyframes marqueemover {
   0% {
-    left: 0px;
+    -webkit-transform: translateX(calc(0px));
+            transform: translateX(calc(0px));
   }
   100% {
-    left: -600px;
+    -webkit-transform: translateX(calc(100vw - 2200px));
+            transform: translateX(calc(100vw - 2200px));
   }
 }
 
