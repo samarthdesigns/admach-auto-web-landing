@@ -587,6 +587,12 @@ body {
   float: right;
 }
 
+@media screen and (max-width: 1100px) {
+  .overlay-holder {
+    height: 90%;
+  }
+}
+
 .overlay-content {
   text-align: center;
   margin-top: 120px;
