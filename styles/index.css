@@ -320,6 +320,10 @@ body {
   left: 20px;
 }
 
+#expand-video {
+  z-index: 99;
+}
+
 .section {
   height: auto;
   padding-top: 120px;
@@ -451,6 +455,14 @@ body {
   margin-bottom: 120px;
 }
 
+#products h1 {
+  margin-bottom: 120px;
+}
+
+#products .holder {
+  max-width: none;
+}
+
 .option-holder {
   width: 100%;
   text-align: center;
@@ -546,5 +558,72 @@ body {
 
 #letter-actions {
   display: none;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.overlay-holder {
+  height: auto;
+  width: 90%;
+  min-height: 40px;
+  max-width: 1200px;
+  background: #FFFFFF;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.overlay-holder .button-holder-one {
+  float: right;
+}
+
+.products {
+  height: auto;
+  width: 100%;
+  margin: auto auto;
+  max-width: 2000px;
+  text-align: center;
+}
+
+.product {
+  height: auto;
+  width: 200px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.product img {
+  height: 170px;
+  width: 200px;
+  margin: 0px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product .caption {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
+  width: 100%;
+  font-size: 11px;
+  font-family: 'Manrope-Light';
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.88px;
+  background: #49C5B6;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=index.css.map */
