@@ -82,4 +82,74 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    $('#close-overlay').click(function(){
+        $('#antinoiseshims_content').fadeOut();
+        $('#autoadjustedpushrods_content').fadeOut();
+        $('#backplates_content').fadeOut();
+        $('#brackets_content').fadeOut();
+        $('#childparts_content').fadeOut();
+        $('#cvbackplates_content').fadeOut();
+        $('#drumbackplates_content').fadeOut();
+        $('#frictiondisks_content').fadeOut();
+        $('#linedbrakeshoes_content').fadeOut();
+        $('#otherparts_content').fadeOut();
+        $('#awards_content').fadeOut();
+        $('.overlay').fadeOut();
+    })
+
+    $('#awards').click(function(){
+        $('.overlay').fadeIn();
+        $('#awards_content').fadeIn();
+    });
+
+    $('#antinoiseshims').click(function(){
+        $('.overlay').fadeIn();
+        $('#antinoiseshims_content').fadeIn();
+    });
+
+    $('#autoadjustedpushrods').click(function(){
+        $('.overlay').fadeIn();
+        $('#autoadjustedpushrods_content').fadeIn();
+    });
+
+    $('#backplates').click(function(){
+        $('.overlay').fadeIn();
+        $('#backplates_content').fadeIn();
+    });
+
+    $('#childparts').click(function(){
+        $('.overlay').fadeIn();
+        $('#childparts_content').fadeIn();
+    });
+    
+    $('#brackets').click(function(){
+        $('.overlay').fadeIn();
+        $('#brackets_content').fadeIn();
+    });
+
+    $('#cvbackplates').click(function(){
+        $('.overlay').fadeIn();
+        $('#cvbackplates_content').fadeIn();
+    });
+
+    $('#drumbackplates').click(function(){
+        $('.overlay').fadeIn();
+        $('#drumbackplates_content').fadeIn();
+    });
+
+    $('#frictiondisks').click(function(){
+        $('.overlay').fadeIn();
+        $('#frictiondisks_content').fadeIn();
+    });
+
+    $('#linedbrakeshoes').click(function(){
+        $('.overlay').fadeIn();
+        $('#linedbrakeshoes_content').fadeIn();
+    });
+
+    $('#otherparts').click(function(){
+        $('.overlay').fadeIn();
+        $('#otherparts_content').fadeIn();
+    });
+
 })

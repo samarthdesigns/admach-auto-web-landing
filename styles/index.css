@@ -576,13 +576,30 @@ body {
   width: 90%;
   min-height: 40px;
   max-width: 1200px;
+  max-height: 800px;
   background: #FFFFFF;
   padding: 40px;
   border-radius: 4px;
+  overflow: scroll;
 }
 
 .overlay-holder .button-holder-one {
   float: right;
+}
+
+.overlay-content {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.overlay-content img {
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .products {
@@ -625,5 +642,49 @@ body {
   letter-spacing: 0.88px;
   background: #49C5B6;
   border-radius: 4px;
+}
+
+#antinoiseshims_content {
+  display: none;
+}
+
+#autoadjustedpushrods_content {
+  display: none;
+}
+
+#backplates_content {
+  display: none;
+}
+
+#brackets_content {
+  display: none;
+}
+
+#childparts_content {
+  display: none;
+}
+
+#cvbackplates_content {
+  display: none;
+}
+
+#drumbackplates_content {
+  display: none;
+}
+
+#frictiondisks_content {
+  display: none;
+}
+
+#linedbrakeshoes_content {
+  display: none;
+}
+
+#otherparts_content {
+  display: none;
+}
+
+#awards_content {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */
