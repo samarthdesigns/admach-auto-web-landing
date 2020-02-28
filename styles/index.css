@@ -186,6 +186,14 @@ body {
   color: #49C5B6;
   font-family: 'Manrope-ExtraBold';
   letter-spacing: 3px;
+  display: inline-block;
+}
+
+.two-section img {
+  height: 30px;
+  width: auto;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .two-section p {
@@ -218,6 +226,9 @@ body {
   .two-section h1 {
     font-size: 24px;
     letter-spacing: 2px;
+  }
+  .two-section img {
+    height: 18px;
   }
   .two-section p {
     font-size: 12px;
