@@ -94,12 +94,18 @@ $(document).ready(function () {
         $('#linedbrakeshoes_content').fadeOut();
         $('#otherparts_content').fadeOut();
         $('#awards_content').fadeOut();
+        $('#certifications_content').fadeOut();
         $('.overlay').fadeOut();
     })
 
     $('#awards').click(function(){
         $('.overlay').fadeIn();
         $('#awards_content').fadeIn();
+    });
+
+    $('#certifications').click(function(){
+        $('.overlay').fadeIn();
+        $('#certifications_content').fadeIn();
     });
 
     $('#antinoiseshims').click(function(){
