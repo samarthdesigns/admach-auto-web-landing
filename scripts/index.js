@@ -17,6 +17,7 @@ $(document).ready(function () {
         }, 500);  
         $('#expand-video').fadeOut();
         $('#close-video').fadeIn();
+        $("html").css("overflow","hidden");
         toggleControls();
     })
 
@@ -31,6 +32,7 @@ $(document).ready(function () {
         $('.landing-video').toggleClass('landing-video-ani')
         $('#expand-video').fadeIn();
         $('#close-video').fadeOut();
+        $("html").css("overflow","auto");
         toggleControls();
     })
 
@@ -205,6 +207,52 @@ $(document).ready(function () {
                 }, 2000); 
             });
     })
+
+    $('#menu').click(function(){
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    })
+
+    $("#menu-mission").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#mission").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-partners").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#partners").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-quality").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#quality").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-products").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#products").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-contact").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#form-options").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-home").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
 
 })
 
