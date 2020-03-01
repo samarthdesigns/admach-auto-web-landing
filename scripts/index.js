@@ -158,4 +158,53 @@ $(document).ready(function () {
         $('#otherparts_content').fadeIn();
     });
 
+    $('#form-submit').click(function(){
+        var name = $('#form-name').val();
+        var companyName = $('#form-company-name').val();
+        var countryName = $('#form-country-name').val();
+        var email = $('#form-email').val();
+        var message = $('#form-message').val();
+
+        fetch('https://dry-springs-23996.herokuapp.com/add', {
+            method:'POST',
+            crossDomain:true,
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                companyName: companyName,
+                countryName: countryName,
+                email: email,
+                message: message
+            }),
+        })
+        .then((response) => response.json())
+        .then((result) => {
+            if(result.message!=undefined){
+                $('.message').toggleClass('message-success');
+                $("#message-text").text(result.message);
+                setTimeout(() => {
+                    $('.message').toggleClass('message-success');
+                }, 2000);  
+            }
+            else if(result.error!=undefined){
+                $('.message').toggleClass('message-error');
+                $("#message-text").text(result.error);
+                setTimeout(() => {
+                    $('.message').toggleClass('message-error');
+                }, 2000);  
+            }
+        })
+        .catch((error) => {
+            $('.message').toggleClass('message-error');
+                $("#message-text").text("Check your internet connection");
+                setTimeout(() => {
+                    $('.message').toggleClass('message-error');
+                }, 2000); 
+            });
+    })
+
 })
+

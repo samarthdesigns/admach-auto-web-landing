@@ -708,4 +708,39 @@ body {
 #certifications_content {
   display: none;
 }
+
+.message {
+  height: 8vh;
+  line-height: 8vh;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999999999;
+  background: #FFFFFF;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  color: #FFFFFF;
+  font-family: 'Manrope-Light';
+}
+
+.message-success {
+  background: #49C5B6;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.message-error {
+  background: #FF908A;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
 /*# sourceMappingURL=index.css.map */
