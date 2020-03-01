@@ -903,8 +903,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-animation: landinglogo .5s ease-in-out alternate infinite;
-          animation: landinglogo .5s ease-in-out alternate infinite;
+  -webkit-animation: landinglogo .8s ease-in-out alternate infinite;
+          animation: landinglogo .8s ease-in-out alternate infinite;
 }
 
 @-webkit-keyframes landinglogo {
