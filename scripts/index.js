@@ -1,4 +1,4 @@
-jQuery("body").prepend('<div id="preloader"><img src="./content/logo.png"></div>');
+$("body").prepend('<div id="preloader"><img src="./content/logo.png"></div>');
 
 $(document).ready(function () {
 
