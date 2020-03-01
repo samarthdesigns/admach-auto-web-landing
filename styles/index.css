@@ -893,7 +893,7 @@ body {
 }
 
 #preloader img {
-  height: 70%;
+  height: 30%;
   max-height: 200px;
   width: auto;
   margin: auto auto;
