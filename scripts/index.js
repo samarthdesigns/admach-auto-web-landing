@@ -1,6 +1,9 @@
-
+jQuery("body").prepend('<div id="preloader"><img src="./content/logo.png"></div>');
 
 $(document).ready(function () {
+
+    $("#preloader").remove();
+    $("html").css("overflow","auto");
 
     var video = document.getElementById("video-player");
 
