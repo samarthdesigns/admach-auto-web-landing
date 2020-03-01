@@ -18,8 +18,6 @@ $(document).ready(function () {
         $('#expand-video').fadeOut();
         $('#close-video').fadeIn();
         $("html").css("overflow","hidden");
-        $('.header').fadeOut();
-        $('.header-mobile').fadeOut();
         toggleControls();
     })
 
@@ -35,8 +33,6 @@ $(document).ready(function () {
         $('#expand-video').fadeIn();
         $('#close-video').fadeOut();
         $("html").css("overflow","auto");
-        $('.header').fadeIn();
-        $('.header-mobile').fadeIn();
         toggleControls();
     })
 
