@@ -893,8 +893,8 @@ body {
 }
 
 #preloader img {
-  height: 30%;
-  max-height: 200px;
+  height: 20%;
+  max-height: 150px;
   width: auto;
   margin: auto auto;
   position: relative;
