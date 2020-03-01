@@ -1,8 +1,10 @@
 $("body").prepend('<div id="preloader"><img src="./content/logo.png"></div>');
 
-$(document).ready(function () {
+window.addEventListener('load', function(){
+    document.getElementById('preloader').style.display = 'none';
+})
 
-    $("#preloader").remove();
+$(document).ready(function () {
     $("html").css("overflow","auto");
 
     var video = document.getElementById("video-player");
@@ -20,7 +22,7 @@ $(document).ready(function () {
         }, 500);  
         $('#expand-video').fadeOut();
         $('#close-video').fadeIn();
-        $("html").css("overflow","hidden");
+        // $("html").css("overflow","hidden");
         toggleControls();
     })
 
@@ -35,7 +37,7 @@ $(document).ready(function () {
         $('.landing-video').toggleClass('landing-video-ani')
         $('#expand-video').fadeIn();
         $('#close-video').fadeOut();
-        $("html").css("overflow","auto");
+        // $("html").css("overflow","auto");
         toggleControls();
     })
 

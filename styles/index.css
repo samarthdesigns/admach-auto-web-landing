@@ -884,6 +884,9 @@ body {
 
 #preloader {
   height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100vw;
   background: #FFFFFF;
   z-index: 9999999999999999583119736832 img;
