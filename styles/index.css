@@ -889,17 +889,22 @@ body {
   left: 0px;
   width: 100vw;
   background: #FFFFFF;
-  z-index: 9999999999999999583119736832 img;
-  z-index-height: 70%;
-  z-index-max-height: 200px;
-  z-index-width: auto;
-  z-index-margin: auto auto;
-  z-index-position: relative;
-  z-index-top: 50%;
-  z-index-left: 50%;
-  z-index-transform: translate(-50%, -50%);
-  z-index-opacity: 0;
-  z-index-animation: landinglogo .5s ease-in-out alternate infinite;
+  z-index: 9999999999999999999999999999;
+}
+
+#preloader img {
+  height: 70%;
+  max-height: 200px;
+  width: auto;
+  margin: auto auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: landinglogo .5s ease-in-out alternate infinite;
+          animation: landinglogo .5s ease-in-out alternate infinite;
 }
 
 @-webkit-keyframes landinglogo {
