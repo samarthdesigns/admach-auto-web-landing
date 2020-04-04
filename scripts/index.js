@@ -217,6 +217,48 @@ $(document).ready(function () {
         $('.header-mobile').toggleClass('header-mobile-expand');
     })
 
+     $("#menu-mission-mobile").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#mission").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-partners-mobile").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#partners").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-quality-mobile").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#quality").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-products-mobile").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#products").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-contact-mobile").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#form-options").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
+    $("#menu-home-mobile").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1000);
+        $('.header-mobile').toggleClass('header-mobile-expand');
+    });
+
     $("#menu-mission").click(function (){
         $('html, body').animate({
             scrollTop: $("#mission").offset().top

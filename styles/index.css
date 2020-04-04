@@ -186,7 +186,7 @@ body {
 }
 
 .two-section h1 {
-  font-size: 38px;
+  font-size: 32px;
   color: #49C5B6;
   font-family: 'Manrope-ExtraBold';
   letter-spacing: 3px;
@@ -201,8 +201,8 @@ body {
 }
 
 .two-section p {
-  font-size: 18px;
-  line-height: 41px;
+  font-size: 14px;
+  line-height: 32px;
   font-family: 'Manrope-Light';
   letter-spacing: 1.25px;
   margin-bottom: 60px;
@@ -404,7 +404,7 @@ body {
   text-align: center;
   margin: auto auto;
   white-space: nowrap;
-  width: 2200px;
+  width: 1550px;
   -webkit-transform: translateX(calc(0px));
           transform: translateX(calc(0px));
   -webkit-animation: marqueemover 12s ease-in-out alternate infinite;
@@ -417,8 +417,8 @@ body {
             transform: translateX(calc(0px));
   }
   100% {
-    -webkit-transform: translateX(calc(100vw - 2200px));
-            transform: translateX(calc(100vw - 2200px));
+    -webkit-transform: translateX(calc(100vw - 1550px));
+            transform: translateX(calc(100vw - 1550px));
   }
 }
 
@@ -428,8 +428,8 @@ body {
             transform: translateX(calc(0px));
   }
   100% {
-    -webkit-transform: translateX(calc(100vw - 2200px));
-            transform: translateX(calc(100vw - 2200px));
+    -webkit-transform: translateX(calc(100vw - 1550px));
+            transform: translateX(calc(100vw - 1550px));
   }
 }
 
@@ -656,7 +656,7 @@ body {
   padding-bottom: 5px;
   height: auto;
   width: 100%;
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Manrope-Light';
   color: #FFFFFF;
   text-align: center;
@@ -775,6 +775,7 @@ body {
 }
 
 .header-element {
+  font-size: 12px;
   height: 40px;
   line-height: 40px;
   display: inline-block;
@@ -836,6 +837,7 @@ body {
   cursor: pointer;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  font-size: 12px;
 }
 
 .header-mobile-element img {
@@ -871,6 +873,40 @@ body {
   display: block;
 }
 
+.menu-mobile {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFFFFF;
+  z-index: 99999999999090999999999999999999999;
+  display: none;
+}
+
+.menu-mobile .holder-menu-mobile {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu-mobile .menu-mobile-item {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Manrope-Light';
+  cursor: pointer;
+}
+
+#right-video {
+  background: url(../content/video-poster.png) center;
+  background-size: cover;
+}
+
 #menu {
   margin-left: 0px;
   float: right;
@@ -894,7 +930,7 @@ body {
 
 #preloader img {
   height: 20%;
-  max-height: 150px;
+  max-height: 60px;
   width: auto;
   margin: auto auto;
   position: relative;
