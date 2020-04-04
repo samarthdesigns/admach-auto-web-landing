@@ -18,6 +18,11 @@
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/yall.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", yall);
+    </script>
 
     <div class="header">
 
@@ -60,20 +65,6 @@
 
     </div>
 
-    <!-- <div class="menu-mobile">
-
-        <div class="holder-menu-mobile">
-
-            <div class="menu-mobile-item" id="menu-mission-mobile">Mission</div>
-            <div class="menu-mobile-item" id="menu-partners-mobile">Partners</div>
-            <div class="menu-mobile-item" id="menu-quality-mobile">Quality</div>
-            <div class="menu-mobile-item" id="menu-products-mobile">Products</div>
-            <div class="menu-mobile-item" id="menu-contact-mobile">Contact Us</div>
-
-        </div>
-
-    </div> -->
-
     <div class="overlay">
 
         <div class="overlay-holder center">
@@ -84,7 +75,7 @@
 
                 <a href="./content/certifications/IATFCERTIFICATE.pdf" download> 
                     <div class="product">
-                        <img src="./content/certifications/certificate_1.png">
+                        <img class="lazy" src="./content/placeholder.svg" data-src="./content/certifications/certificate_1.png">
                         <div class="caption">
                             IATF
                         </div>
@@ -93,7 +84,7 @@
 
                 <a href="./content/certifications/ISOCERTIFICATE.pdf" download> 
                     <div class="product">
-                        <img src="./content/certifications/certificate_2.png">
+                        <img class="lazy" src="./content/placeholder.svg" data-src="./content/certifications/certificate_2.png">
                         <div class="caption">
                             ISO
                         </div>
@@ -105,21 +96,21 @@
             <div class="overlay-content" id="awards_content">
 
                 <div class="product">
-                    <img src="./content/awards/awards_1.jpg">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/awards/awards_1.jpg">
                     <div class="caption">
                         Best Drive in Produtivity Improvement
                     </div>
                 </div>
 
                 <div class="product">
-                    <img src="./content/awards/awards_2.jpg">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/awards/awards_2.jpg">
                     <div class="caption">
                         Best Cost Down
                     </div>
                 </div>
 
                 <div class="product">
-                    <img src="./content/awards/awards_3.jpg">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/awards/awards_3.jpg">
                     <div class="caption">
                         Best Kaizen Award
                     </div>
@@ -152,13 +143,13 @@
             </div>
             <div class="overlay-content" id="brackets_content">
 
-                <img src="./content/parts/bracket/bracket_1.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/bracket/bracket_1.jpeg">
 
             </div>
             <div class="overlay-content" id="childparts_content">
 
-                <img src="./content/parts/childparts/childparts_1.jpeg">
-                <img src="./content/parts/childparts/childparts_2.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/childparts/childparts_1.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/childparts/childparts_2.jpeg">
 
             </div>
             <div class="overlay-content" id="cvbackplates_content">
@@ -180,17 +171,17 @@
             </div>
             <div class="overlay-content" id="linedbrakeshoes_content">
 
-                <img src="./content/parts/linedbrakeshoe/linedbrakeshoe_1.jpeg">
-                <img src="./content/parts/linedbrakeshoe/linedbrakeshoe_2.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/linedbrakeshoe/linedbrakeshoe_1.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/linedbrakeshoe/linedbrakeshoe_2.jpeg">
 
             </div>
             <div class="overlay-content" id="otherparts_content">
 
-                <img src="./content/parts/otherparts/otherparts_1.jpeg">
-                <img src="./content/parts/otherparts/otherparts_2.jpeg">
-                <img src="./content/parts/otherparts/otherparts_3.jpeg">
-                <img src="./content/parts/otherparts/otherparts_4.jpeg">
-                <img src="./content/parts/otherparts/otherparts_5.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/otherparts/otherparts_1.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/otherparts/otherparts_2.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/otherparts/otherparts_3.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/otherparts/otherparts_4.jpeg">
+                <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/otherparts/otherparts_5.jpeg">
 
             </div> 
             
@@ -297,70 +288,74 @@
             <div class="products">
 
                 <div class="product" id="antinoiseshims">
-                    <img src="./content/parts/antinoiseshims/antinoiseshims1.jpeg" alt="Anti Noise Shims">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/antinoiseshims/antinoiseshims1.jpeg" alt="Anti Noise Shims">
                     <div class="caption">
                         Anti Noise Shims
                     </div>
                 </div>
 
                 <div class="product" id="autoadjustedpushrods">
-                    <img src="./content/parts/autoadjusterpushrods/autoadjusterpushrods_1.jpeg" alt="Auto Adjusted Push Rods">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/autoadjusterpushrods/autoadjusterpushrods_1.jpeg" alt="Auto Adjusted Push Rods">
                     <div class="caption">
                         Auto Adjusted Push Rods
                     </div>
                 </div>
 
                 <div class="product" id="backplates">
+
                     <img src="./content/parts/backplate/backplate_2.jpeg" alt="Back Plates">
+
                     <div class="caption">
                         Back Plates
                     </div>
                 </div>
 
                 <div class="product" id="brackets">
-                    <img src="./content/parts/bracket/bracket_1.jpeg" alt="Brackets">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/bracket/bracket_1.jpeg" alt="Brackets">
                     <div class="caption">
                         Brackets
                     </div>
                 </div>
 
                 <div class="product" id="childparts">
-                    <img src="./content/parts/childparts/childparts_1.jpeg" alt="Child Parts">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/childparts/childparts_1.jpeg" alt="Child Parts">
                     <div class="caption">
                         Child Parts
                     </div>
                 </div>
 
                 <div class="product" id="cvbackplates">
-                    <img src="./content/parts/cvbackplate/cvbackplate_1.jpeg" alt="CV Back Plates">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/cvbackplate/cvbackplate_1.jpeg" alt="CV Back Plates">
                     <div class="caption">
                         CV Back Plates
                     </div>
                 </div>
 
                 <div class="product" id="drumbackplates">
+
                     <img src="./content/parts/drumbackplate/drumbackplate_2.jpeg" alt="Drum Back Plates">
+
                     <div class="caption">
                         Drum Back Plates
                     </div>
                 </div>
 
                 <div class="product" id="frictiondisks">
-                    <img src="./content/parts/frictiondisk/frictiondisk_1.jpeg" alt="Friction Disks">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/frictiondisk/frictiondisk_1.jpeg" alt="Friction Disks">
                     <div class="caption">
                         Friction Disks
                     </div>
                 </div>
 
                 <div class="product" id="linedbrakeshoes">
-                    <img src="./content/parts/linedbrakeshoe/linedbrakeshoe_1.jpeg" alt="Lined Brake Shoes">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/linedbrakeshoe/linedbrakeshoe_1.jpeg" alt="Lined Brake Shoes">
                     <div class="caption">
                         Lined Brake Shoes
                     </div>
                 </div>
 
                 <div class="product" id="otherparts">
-                    <img src="./content/parts/otherparts/otherparts_1.jpeg" alt="Other Parts">
+                    <img class="lazy" src="./content/placeholder.svg" data-src="./content/parts/otherparts/otherparts_1.jpeg" alt="Other Parts">
                     <div class="caption">
                         Other Parts
                     </div>
@@ -397,7 +392,7 @@
         </div>
         <div class="two-section">
 
-            <img src="./content/contact-us.jpg" alt="Contact Us">
+            <img class="lazy" src="./content/placeholder.svg" data-src="./content/contact-us.jpg" alt="Contact Us">
 
         </div>
 
@@ -485,6 +480,7 @@
         <div id="message-text"></div>
 
     </div>
+
 
 
 </body>
