@@ -45,8 +45,10 @@ $(document).ready(function () {
         console.log('test');
         if (video.hasAttribute("controls")) {
             video.removeAttribute("controls")
+            video.muted = true;
         } else {
-            video.setAttribute("controls", "controls")
+            video.setAttribute("controls", "controls");
+            video.muted = false;
         }
     }
 
