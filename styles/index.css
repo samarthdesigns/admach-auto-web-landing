@@ -908,11 +908,6 @@ body {
   cursor: pointer;
 }
 
-#right-video {
-  background: url(../content/video-poster.png) center;
-  background-size: cover;
-}
-
 #menu {
   margin-left: 0px;
   float: right;
